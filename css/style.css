@@ -1,0 +1,103 @@
+header{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #BECE89;
+    margin: -8px;
+    float: inline-start;
+    
+}
+body{
+    background-color: white;
+}
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #BECE89;
+    color: white;
+    text-align: center;
+  }
+.menu {
+    display: table;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: #BECE89;
+    position: relative;
+    text-align:center;
+}
+
+.footerContacts{
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+}
+
+.footerContacts a{
+    display: flexbox;
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.footerContacts a:hover{
+   color: #137C69;
+}
+
+.footerContacts i{
+    float: left;
+    margin: 0;
+    padding-right: 5px;
+}
+
+.footerSocial{
+    display: flexbox;
+    float: right;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.footerSocial i{
+    color: black;
+}
+
+.logo{
+    background-color: #BECE89;
+    text-align: left;
+    margin-top: 10px;
+    height: 50%;
+    float: left;
+    font-size: 27px;
+}
+
+.menu i{
+    float: left;
+    margin: 0;
+    padding-right: 10px;
+}
+  
+.menu a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+
+}
+.menu a:hover {
+    background-color: #04AA6D;
+    color: black;
+    animation-name: scaleup;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes scaleup {
+    0%   { transform:scale(1.0); }
+    50%  { transform:scale(1.2); }
+    100% { transform:scale(1.0); }
+}
