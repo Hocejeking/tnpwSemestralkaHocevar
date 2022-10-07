@@ -1,27 +1,61 @@
 header{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #BECE89;
+    background-color: #306F65;
     margin: -8px;
     float: inline-start;
     
 }
 body{
-    background-color: white;
+    background-color: #ADCECA;
 }
+
+.Info h1{
+    margin-top: 110px;
+    font-size: 60px;
+    float: left;
+}
+
+.Info img{
+    margin-top: 45px;
+    margin-left: 90px;
+}
+
+.Info{
+    display: flexbox;
+    animation: fadein 2s;
+    padding-right: 30px;
+    margin-left: 350px;
+}
+
+.Info a{
+    display: grid;
+    color: black;
+    text-decoration: none;
+    font-size: 25px;
+    margin-left: 40px;
+    margin-top: -160px;
+    border-style: solid;
+    width: fit-content;
+    background-color: #5e8d85;
+    border-radius: 15px;
+    
+}
+
 footer {
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #BECE89;
+    background-color: #306F65;
     color: white;
     text-align: center;
   }
 .menu {
+    animation: 1s ease-out 0s 1 slideInFromLeft;
     display: table;
     margin: 0 auto;
     overflow: hidden;
-    background-color: #BECE89;
+    background-color: #306F65;
     position: relative;
     text-align:center;
 }
@@ -42,7 +76,7 @@ footer {
 }
 
 .footerContacts a:hover{
-   color: #137C69;
+   color: #ffffff;
 }
 
 .footerContacts i{
@@ -64,13 +98,17 @@ footer {
     color: black;
 }
 
+.footerSocial i:hover{
+    color:#ffffff;
+}
+
 .logo{
-    background-color: #BECE89;
+    background-color: #306F65;
     text-align: left;
-    margin-top: 10px;
+    margin-top: 8px;
     height: 50%;
     float: left;
-    font-size: 27px;
+    font-size: 40px;
 }
 
 .menu i{
@@ -85,11 +123,10 @@ footer {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
-
+    font-size: 25px;
 }
 .menu a:hover {
-    background-color: #04AA6D;
+    background-color: #3A867A;
     color: black;
     animation-name: scaleup;
     animation-duration: 0.5s;
@@ -101,3 +138,17 @@ footer {
     50%  { transform:scale(1.2); }
     100% { transform:scale(1.0); }
 }
+
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes fadein {
+    from { opacity: 0}
+    to   { opacity: 1}
+  }
