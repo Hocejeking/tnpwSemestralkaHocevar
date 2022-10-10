@@ -10,37 +10,49 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.Info h1{
-    margin-top: 110px;
-    font-size: 55px;
-    float: left;
+.Info
+{
+    animation-name: infoPic;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    margin-top: 8px;
+    margin-right: -8px;
+    margin-left: -8px;
+    display: block;
+    background: url(/images/banner_img.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    text-align: center;
+    line-height: 350px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 45px;
 }
 
-.Info img{
-    margin-top: 45px;
-    margin-left: 90px;
+.infos{
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.Info{
-    display: flexbox;
-    animation: fadein 2s;
-    margin-left: 350px;
+.infoMain{
+    text-align: center;
 }
-
-.infoButtons{
-    margin-top: -150px;
-    margin-left: 350px;
+.infoText{
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    text-align: center;
 }
 
 .infoButtons a{
+    text-align: center;
     display: block;
     color: black;
     text-decoration: none;
     font-size: 25px;
     border-style: solid;
-    float: left;
     background-color: #5e8d85;
     border-radius: 10px;
+    max-width: 150px;
+    margin: 0 auto;
 }
 
 .infoButtons a:hover{
@@ -111,9 +123,9 @@ footer {
 }
 
 .logo{
+    margin-top: 8px;
     background-color: #306F65;
     text-align: left;
-    margin-top: 8px;
     height: 50%;
     float: left;
     font-size: 40px;
@@ -121,7 +133,6 @@ footer {
 
 .menu i{
     float: left;
-    margin: 0;
     padding-right: 10px;
 }
   
@@ -160,3 +171,14 @@ footer {
     from { opacity: 0}
     to   { opacity: 1}
   }
+
+@keyframes infoPic{
+    0%{
+        transform: translateY(-50%);
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
