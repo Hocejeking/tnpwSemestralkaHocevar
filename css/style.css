@@ -3,12 +3,19 @@ header{
     background-color: #306F65;
     margin: -8px;
     float: inline-start;
-    
 }
 body{
     background-color: #ADCECA;
     font-family: Arial, Helvetica, sans-serif;
+    overflow: scroll;
 }
+
+@media only screen and(max-width: 992px) {
+    .Info{
+        line-height: 220px;
+    }
+}
+
 
 .Info
 {
@@ -84,6 +91,16 @@ footer {
     text-align: left;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 10px;
+    color: black;
+}
+
+.footerContacts p{
+    display: flexbox;
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 4px 4px;
+    text-decoration: none;
 }
 
 .footerContacts a{
