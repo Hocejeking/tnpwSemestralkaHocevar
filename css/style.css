@@ -24,7 +24,7 @@ body{
     margin-right: -8px;
     margin-left: -8px;
     display: block;
-    background: url(/tnpwSemestralka/images/banner_img.jpg);
+    background: url(/images/banner_img.jpg);
     background-repeat: no-repeat;
     background-position: top;
     text-align: center;
@@ -169,12 +169,28 @@ footer {
     animation-fill-mode: forwards;
 }
 
-.portrait{
+.founder{
+    display: flexbox;
     margin-top: 8px;
     margin: 0 auto;
-    background-image: url(/tnpwSemestralka/images/about_portrait.jpg);
+}
+
+.portrait{
+    margin-left: 400px;
+    margin-right: 0px;
+    background-image: url(/images/about_portrait.jpg);
     width: 400px;
     height: 400px;
+}
+
+.founderDesc{
+    display: block;
+    margin-top: -380px;
+    margin-left: 450px;
+    padding-left: 400px;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+    line-height: 25px;
 }
 
 .portraitH{
@@ -182,11 +198,11 @@ footer {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 50px;
+    text-decoration: underline;
 }
 
 .portraitFounderText{
-    margin: 0 auto;
-    float: right;
+    text-align: center;
 }
 
 @keyframes scaleup {
