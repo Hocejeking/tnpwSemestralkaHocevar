@@ -9,7 +9,7 @@ body{
     overflow: scroll;
 }
 
-@media only screen and(max-width: 992px) {
+@media only screen and(min-width: 992px) {
     .Info{
         line-height: 220px;
     }
@@ -84,7 +84,7 @@ footer {
     background-color: #306F65;
     position: relative;
     margin: 0 auto;
-    margin-right: -150px;
+    margin-right: 0px;
 }
 
 .footerContacts{
@@ -95,7 +95,6 @@ footer {
 }
 
 .footerContacts p{
-    display: flexbox;
     float: left;
     color: black;
     text-align: center;
@@ -104,7 +103,6 @@ footer {
 }
 
 .footerContacts a{
-    display: flexbox;
     float: left;
     color: black;
     text-align: center;
@@ -123,7 +121,6 @@ footer {
 }
 
 .footerSocial{
-    display: flexbox;
     float: right;
     color: black;
     text-align: center;
@@ -170,7 +167,6 @@ footer {
 }
 
 .founder{
-    display: flexbox;
     margin-top: 8px;
     margin: 0 auto;
 }
@@ -181,6 +177,8 @@ footer {
     background-image: url(/images/about_portrait.jpg);
     width: 400px;
     height: 400px;
+    border-style: groove;
+    border-width: 2px;
 }
 
 .founderDesc{
