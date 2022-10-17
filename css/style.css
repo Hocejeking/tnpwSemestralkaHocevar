@@ -2,12 +2,17 @@ header{
     font-family: Arial, Helvetica, sans-serif;
     background-color: #306F65;
     margin: -8px;
-    float: inline-start;
-    
 }
 body{
     background-color: #ADCECA;
     font-family: Arial, Helvetica, sans-serif;
+    overflow: scroll;
+}
+
+@media only screen and(max-width: 992px) {
+    .Info{
+        line-height: 220px;
+    }
 }
 
 .Info
@@ -26,6 +31,7 @@ body{
     line-height: 350px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 45px;
+    backdrop-filter: blur(4px);
 }
 
 .infos{
@@ -38,7 +44,7 @@ body{
 .infoText{
     margin: 0 auto;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 22px;
+    font-size: 25px;
     text-align: center;
 }
 
@@ -70,20 +76,31 @@ footer {
     color: white;
     text-align: center;
   }
+
 .menu {
     animation: 1s ease-out 0s 1 slideInFromLeft;
     display: table;
-    margin: 0 auto;
     overflow: hidden;
     background-color: #306F65;
     position: relative;
-    text-align:center;
+    margin: 0 auto;
+    margin-right: -150px;
 }
 
 .footerContacts{
     text-align: left;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 10px;
+    color: black;
+}
+
+.footerContacts p{
+    display: flexbox;
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 4px 4px;
+    text-decoration: none;
 }
 
 .footerContacts a{
@@ -139,7 +156,7 @@ footer {
 .menu a {
     float: left;
     color: black;
-    text-align: center;
+    text-align: right;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 25px;
@@ -150,6 +167,42 @@ footer {
     animation-name: scaleup;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
+}
+
+.founder{
+    display: flexbox;
+    margin-top: 8px;
+    margin: 0 auto;
+}
+
+.portrait{
+    margin-left: 400px;
+    margin-right: 0px;
+    background-image: url(/images/about_portrait.jpg);
+    width: 400px;
+    height: 400px;
+}
+
+.founderDesc{
+    display: block;
+    margin-top: -380px;
+    margin-left: 450px;
+    padding-left: 400px;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+    line-height: 25px;
+}
+
+.portraitH{
+    margin-top: 8px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    text-decoration: underline;
+}
+
+.portraitFounderText{
+    text-align: center;
 }
 
 @keyframes scaleup {
