@@ -199,6 +199,39 @@ footer {
     text-decoration: underline;
 }
 
+.seniorPartnersH{
+    margin-top: 300px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    text-decoration: underline;
+}
+
+.seniorPartnerDesc1{
+    display: block;
+    margin-top: -380px;
+    margin-left: 450px;
+    padding-left: 400px;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+    line-height: 25px;
+}
+
+.seniorPartnerText1{
+    text-align: center;
+}
+
+.seniorPortrait1{
+    margin-left: 400px;
+    margin-top: 100px;
+    margin-right: 0px;
+    background-image: url(/images/seniorPartner.png);
+    width: 400px;
+    height: 600px;
+    border-style: groove;
+    border-width: 2px;
+}
+
 .portraitFounderText{
     text-align: center;
 }
