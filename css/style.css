@@ -166,75 +166,51 @@ footer {
     animation-fill-mode: forwards;
 }
 
-.founder{
-    margin-top: 8px;
-    margin: 0 auto;
+.gridContainer{
+   display: flex;
+   flex-direction:column;
+   justify-content: center;
+   align-items: center;
 }
 
-.portrait{
-    margin-left: 400px;
-    margin-right: 0px;
-    background-image: url(/images/about_portrait.jpg);
-    width: 400px;
-    height: 400px;
-    border-style: groove;
-    border-width: 2px;
-}
-
-.founderDesc{
-    display: block;
-    margin-top: -380px;
-    margin-left: 450px;
-    padding-left: 400px;
-    font-family: Arial, Helvetica, sans-serif;
-    list-style: none;
-    line-height: 25px;
-}
-
-.portraitH{
-    margin-top: 8px;
+.founderPortrait{
+    border-radius: 2px;
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 50px;
-    text-decoration: underline;
+    border-style: solid;
+    align-items: center;
 }
 
-.seniorPartnersH{
-    margin-top: 300px;
+.seniorPartnerPortrait{
+    width: 612px;
+    height: 408px;
+    border-radius: 2px;
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 50px;
-    text-decoration: underline;
+    border-style: solid;
+    align-items: center;
 }
 
-.seniorPartnerDesc1{
-    display: block;
-    margin-top: -380px;
-    margin-left: 450px;
-    padding-left: 400px;
-    font-family: Arial, Helvetica, sans-serif;
-    list-style: none;
-    line-height: 25px;
-}
-
-.seniorPartnerText1{
-    text-align: center;
-}
-
-.seniorPortrait1{
-    margin-left: 400px;
-    margin-top: 100px;
-    margin-right: 0px;
-    background-image: url(/images/seniorPartner.png);
-    width: 400px;
+.seniorPartnerPortrait2{
+    width: 612px;
     height: 600px;
-    border-style: groove;
-    border-width: 2px;
+    border-radius: 2px;
+    text-align: center;
+    border-style: solid;
+    align-items: center;
+}
+.aboutHeadline{
+    text-decoration: underline;
+    text-align: center;
+    align-self: center;
+    font-size: 55px;
 }
 
-.portraitFounderText{
+.aboutSeniorHeadline{
+    text-decoration: underline;
     text-align: center;
+    align-self: center;
+    font-size: 55px;
 }
+
 
 @keyframes scaleup {
     0%   { transform:scale(1.0); }
