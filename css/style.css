@@ -78,13 +78,19 @@ footer {
   }
 
 .menu {
-    animation: 1s ease-out 0s 1 slideInFromLeft;
     display: table;
     overflow: hidden;
     background-color: #306F65;
     position: relative;
     margin: 0 auto;
-    margin-right: 0px;
+    margin-right: 0;
+    margin-top: 0;
+}
+
+.menu li{
+    margin-top: -15px;
+    list-style: none;
+    float: left;
 }
 
 .footerContacts{
@@ -137,12 +143,14 @@ footer {
 }
 
 .logo{
-    margin-top: 8px;
+    margin: 0 auto;
     background-color: #306F65;
     text-align: left;
     height: 50%;
     float: left;
-    font-size: 40px;
+    font-size: 40px;;
+    display: block;
+    align-items: center;
 }
 
 .menu i{
@@ -167,10 +175,12 @@ footer {
 }
 
 .gridContainer{
+   margin-right: auto;
    display: flex;
    flex-direction:column;
    justify-content: center;
    align-items: center;
+   align-self: center;
 }
 
 .founderPortrait{
@@ -187,6 +197,7 @@ footer {
     text-align: center;
     border-style: solid;
     align-items: center;
+    align-self: center;
 }
 
 .seniorPartnerPortrait2{
@@ -225,7 +236,6 @@ footer {
     align-self: center;
     font-size: 55px;
 }
-
 
 @keyframes scaleup {
     0%   { transform:scale(1.0); }
