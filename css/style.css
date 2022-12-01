@@ -9,8 +9,6 @@ body{
     overflow: scroll;
 }
 
-
-
 .Info
 {
     animation-name: infoPic;
@@ -42,6 +40,10 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 25px;
     text-align: center;
+}
+
+.infoText p{
+    margin-bottom: 15px;
 }
 
 .infoButtons a{
@@ -90,14 +92,13 @@ footer {
 }
 
 .footerContacts{
-    text-align: left;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 10px;
+    font-size: 12px;
     color: black;
 }
 
 .footerContacts p{
-    float: left;
+    float: right;
     color: black;
     text-align: center;
     padding: 4px 4px;
@@ -128,6 +129,7 @@ footer {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    font-size: 25px;
 }
 
 .footerSocial i{
@@ -353,6 +355,18 @@ textarea {
         width: 300px;
         height: 300px;
     }
+
+    .gridContainer{
+        display: flex;
+    }
+
+    .footerSocial{
+        font-size: medium;
+    }
+
+    .footerContacts{
+        font-size: small;
+    }
 }
 
 @media screen and (max-width: 610px) {
@@ -383,4 +397,99 @@ textarea {
         font-weight: bold;
     }
 }
+
+.photo{
+    }
+    h1{
+        text-align: center;
+    }
+  .container-all{
+    width: fit-content;
+    margin: 20px auto;
+    height: auto;
+  }
+  .container{
+    width: calc(33% - 6px);
+    overflow:hidden;
+    height: fit-content;
+    margin:3px;
+    padding: 0;
+    display:block;
+    position:relative;
+    float:left;
+  }
+  img{
+    width: 100%;
+    transition-duration: .3s;
+    max-width: 100%;
+    display:block;
+    overflow:hidden;
+    cursor:pointer;
+  }
+  .title{
+    position:absolute;
+    display:block;
+    cursor:pointer;
+    top: 35%;
+    display: none;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 1.6em;
+    text-shadow: 1px 5px 10px black;
+    transition-duration: .3s;
+  }
+  .text{
+    position:absolute;
+    top: 70%;
+    cursor:pointer;
+    max-width: 80%;
+    text-align:center;
+    left: 50%;
+    text-shadow: 1px 5px 10px black;
+    font-size: 2em;
+    display:none;
+    margin-right: -50%;
+    transition-duration: .3s;
+    transform: translate(-50%, -50%) 
+  }
+  .container:hover img{
+    transform: scale(1.2);
+    transition-duration: .3s;
+    filter: grayscale(100%);
+    filter: blur(5px);
+    opacity: .7;
+  }
+  .container:hover span{
+    color: rgb(0, 0, 0);
+    display: block;
+    transition-duration: .3s;
+  }
+
+  @media only screen and (max-width: 1323px) {
+    .title{
+        visibility: hidden;
+      }
+      .title{
+        visibility: hidden;
+      }
+
+      .text{
+        top: 50%;
+        font-size: 1em;
+      }
+  }
+
+  @media only screen and (max-width: 900px) {
+      .container {
+          width: calc(50% - 6px);
+      }
+     
+  }
+  @media only screen and (max-width: 400px) {
+      .container {
+          width: 100%;
+      }
+    }
 
